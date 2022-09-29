@@ -32,11 +32,9 @@ body {
 .header {
   color: var(--header-color);
   display: flex;
-  /*margin-left: auto;*/
   border-bottom: 1px solid #ececec;
   height: 80px;
-  /*padding-top: 24px;
-  padding-bottom: 24px;*/
+ 
 }
 
 .container {
@@ -58,7 +56,7 @@ body {
   align-items: center;
 }
 
-.header > .list {
+.header > .specialty__list {
   display: flex;
   align-items: center;
 }
@@ -95,14 +93,8 @@ a {
   gap: 8px;
 }
 
-.list {
+.specialty__list {
   display: flex;
-  /*gap: 30px;*/
-  /*margin-top: 32px;
-  margin-bottom: 32px;
-  margin-right: -30px;
-  /* margin-left: auto; */
-  /*padding: 0;*/
 }
 
 .portfolio-list {
@@ -301,7 +293,7 @@ ul {
 
 /*main*/
 
-.visually-hidden {
+.specialty__hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -362,7 +354,7 @@ ul {
   margin: auto;
 }
 
-.section {
+.specialty {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -378,7 +370,7 @@ ul {
   gap: 30px;
 }
 
-.specialty-item {
+.specialty__item {
   width: 270px;
 }
 
@@ -392,7 +384,7 @@ ul {
   border-radius: 4px;
 }
 
-.subject {
+.card__title {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -403,7 +395,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.text {
+.card__text {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;

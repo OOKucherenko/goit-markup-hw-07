@@ -170,6 +170,14 @@ textarea[placeholder='Введіть текст'] {
         padding: 0;
         color: var(--link-text);
     }
+
+    & >.checkbox-input {
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+    }
 }
 
 

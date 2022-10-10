@@ -156,8 +156,9 @@ textarea[placeholder='Введіть текст'] {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--icon-text);
+}
 
-    &-item {
+.checkbox-item {
         background-origin: border-box;
         border: 2px solid var(--icon-text);
         border-radius: 2px;
@@ -166,20 +167,20 @@ textarea[placeholder='Введіть текст'] {
         margin-right: 8.38px;
     }
 
-    &-icon {
+.checkbox-icon {
         margin: 0;
         padding: 0;
         color: var(--link-text);
     }
 
-    & >.checkbox-input {
+.checkbox >.checkbox-input {
         border: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
         position: absolute;
     }
-}
+
 
 
 .container-checkbox {

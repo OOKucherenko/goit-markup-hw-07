@@ -1096,6 +1096,7 @@ textarea[placeholder="Введіть текст"] {
   letter-spacing: 0.03em;
   color: var(--icon-text);
 }
+
 .checkbox-item {
   background-origin: border-box;
   border: 2px solid var(--icon-text);
@@ -1104,11 +1105,13 @@ textarea[placeholder="Введіть текст"] {
   background-color: var(--color-text);
   margin-right: 8.38px;
 }
+
 .checkbox-icon {
   margin: 0;
   padding: 0;
   color: var(--link-text);
 }
+
 .checkbox > .checkbox-input {
   border: none;
   -webkit-appearance: none;

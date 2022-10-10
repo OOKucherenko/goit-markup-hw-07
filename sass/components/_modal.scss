@@ -19,7 +19,7 @@
     background-color: var(--color-text);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    @include border-radius (4px);
 
 
     &-btn {
@@ -28,7 +28,7 @@
         background-color: var(--color-text);
         border: 1px solid rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
-        border-radius: 50%;
+        @include border-radius (50%);
         position: absolute;
         top: 8px;
         right: 8px;
@@ -51,7 +51,7 @@
     background-color: var(--color-text);
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    border-radius: 50%;
+    @include border-radius (50%);
     position: absolute;
     top: 8px;
     right: 8px;
@@ -85,7 +85,7 @@
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
-    border-radius: 4px;
+    @include border-radius (4px);
     padding: 11px 42px;
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -94,7 +94,7 @@
     &:hover {
         border: 1px solid var(--logo-text);
         box-sizing: border-box;
-        border-radius: 4px;
+        @include border-radius (4px);
     }
 
     &:focus+.form-icon,
@@ -212,7 +212,7 @@ textarea[placeholder='Введіть текст'] {
     &:focus,
     &:hover {
         border: 2px solid var(--logo-text);
-        border-radius: 4px;
+        @include border-radius (4px);
         border-color: var(--color-text);
     }
 
@@ -221,7 +221,7 @@ textarea[placeholder='Введіть текст'] {
 .form-button {
     background-color: var(--button-modal);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    @include border-radius (4px);
     border: 0;
     padding: 10px 55px;
     margin: 30px auto 0;

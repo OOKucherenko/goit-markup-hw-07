@@ -147,6 +147,7 @@ textarea[placeholder='Введіть текст'] {
     transform: translateY(-50%);
 }
 
+
 .checkbox {
     display: flex;
     align-items: center;
@@ -181,10 +182,6 @@ textarea[placeholder='Введіть текст'] {
 }
 
 
-.form-field>.checkbox {
-    padding-left: 12px;
-}
-
 .container-checkbox {
     margin-top: 20px;
 }
@@ -195,6 +192,13 @@ textarea[placeholder='Введіть текст'] {
     background-origin: border-box;
 }
 
+.container-checkbox {
+    margin-top: 20px;
+}
+
+.form-field>.checkbox {
+    padding-left: 12px;
+}
 .chekbox-link {
     margin: 0;
     padding: 0;

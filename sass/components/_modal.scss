@@ -159,30 +159,27 @@ textarea[placeholder='Введіть текст'] {
 }
 
 .checkbox-item {
-        background-origin: border-box;
-        border: 2px solid var(--icon-text);
-        border-radius: 2px;
-        fill: var(--color-text);
-        background-color: var(--color-text);
-        margin-right: 8.38px;
-    }
+    background-origin: border-box;
+    border: 2px solid var(--icon-text);
+    border-radius: 2px;
+    fill: var(--color-text);
+    background-color: var(--color-text);
+    margin-right: 8.38px;
+}
 
 .checkbox-icon {
-        margin: 0;
-        padding: 0;
-        color: var(--link-text);
-    }
+    margin: 0;
+    padding: 0;
+    color: var(--link-text);
+}
 
 .checkbox >.checkbox-input {
-        border: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        position: absolute;
-    }
-
-
-
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
 .container-checkbox {
     margin-top: 20px;
 }

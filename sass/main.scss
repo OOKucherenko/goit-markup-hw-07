@@ -1,25 +1,26 @@
 /* utils*/
-@import "./utils/variables";
-@import "./utils/visually-hidden";
-@import "./utils/mixins";
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
 
 /*base*/
 
-@import "./base/general";
-@import "./base/container";
-@import "./base/reset";
+@import './base/general';
+@import './base/container';
+@import './base/reset';
 
 /*components*/
 
-@import "./components/header";
-@import "./components/logo";
-@import "./components/button";
-@import "./components/portfolio";
-@import "./components/specialty";
-@import "./components/summary";
-@import "./components/comands";
-@import "./components/social";
-@import "./components/client";
-@import "./components/footer";
-@import "./components/rassylka";
-@import "./components/modal";
+@import './components/header';
+@import './components/logo';
+@import './components/main';
+@import './components/button';
+@import './components/portfolio';
+@import './components/specialty';
+@import './components/summary';
+@import './components/comands';
+@import './components/social';
+@import './components/client';
+@import './components/footer';
+@import './components/rassylka';
+@import './components/modal';

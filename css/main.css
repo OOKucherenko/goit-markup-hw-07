@@ -49,92 +49,6 @@ body {
   padding-bottom: 94px;
 }
 
-.section-main {
-  background: var(--main-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-}
-
-.section__client {
-  padding-top: 59px;
-  padding-bottom: 94px;
-}
-
-.title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-text);
-  margin: 0;
-  margin-bottom: 30px;
-}
-
-.section__title,
-.comands__title,
-.summary__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--icon-text);
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
-
-.dignity__title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1875;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--icon-text);
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.footer-title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-text);
-  margin-top: 0px;
-}
-
-.modal-title {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--icon-text);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -161,10 +75,6 @@ ul {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
-
-.icon-item {
-  fill: currentColor;
 }
 
 /*components*/
@@ -381,6 +291,32 @@ ul {
   color: var(--color-text);
 }
 
+.section-main {
+  background: var(--main-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636363636;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 /**
   |============================
   | Загальні кнопки
@@ -510,6 +446,10 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.overlay:hover .overlay, .overlay:focus .overlay {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
 .overlay-desc {
   font-size: 18px;
   line-height: 1.5555555556;
@@ -524,7 +464,7 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-link-link:hover {
+.portfolio-link:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -611,6 +551,16 @@ ul {
   padding: 0;
   margin: 0;
 }
+.summary__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--icon-text);
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
 .summary__item {
   position: relative;
 }
@@ -650,10 +600,19 @@ ul {
 .comands {
   background: var(--button-color);
   margin-top: 0px;
-  padding-top: 94px;
 }
 .comands__list {
   gap: 30px;
+}
+.comands__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--icon-text);
+  margin-bottom: 50px;
+  margin-top: 0px;
 }
 .comands__item {
   background: var(--color-text);
@@ -677,6 +636,16 @@ ul {
   color: var(--link-text);
   margin: 0;
   margin-bottom: 16px;
+}
+.dignity__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--icon-text);
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .social {
@@ -757,6 +726,16 @@ ul {
           justify-content: center;
   gap: 30px;
 }
+.client__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--icon-text);
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
 .client__link {
   width: 170px;
   height: 92px;
@@ -794,6 +773,16 @@ ul {
   padding: 60px 0;
   background: var(--main-color);
 }
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-top: 0px;
+}
 
 .container-footer {
   display: -webkit-box;
@@ -829,6 +818,10 @@ ul {
   padding: 0px;
 }
 
+.list-city__item {
+  margin-bottom: 9px;
+}
+
 .link-footer {
   font-size: 14px;
   line-height: 1.7142857143;
@@ -836,7 +829,6 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   margin: 0;
-  margin-bottom: 9px;
 }
 
 .link-tel-footer {
@@ -948,6 +940,25 @@ ul {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--icon-text);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .modal-btn {
   width: 30px;
@@ -1097,7 +1108,7 @@ textarea[placeholder="Введіть текст"] {
   color: var(--icon-text);
 }
 
-.checkbox-item {
+.chekbox-item {
   background-origin: border-box;
   border: 2px solid var(--icon-text);
   border-radius: 2px;
@@ -1106,36 +1117,23 @@ textarea[placeholder="Введіть текст"] {
   margin-right: 8.38px;
 }
 
-.checkbox-icon {
-  margin: 0;
-  padding: 0;
-  color: var(--link-text);
-}
-
-.checkbox > .checkbox-input {
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-
-.container-checkbox {
-  margin-top: 20px;
-}
-
 .checkbox-input:checked + .chekbox-item {
   border-color: var(--logo-text);
   background-color: var(--logo-text);
   background-origin: border-box;
 }
 
-.container-checkbox {
-  margin-top: 20px;
+.chekbox-link:focus,
+.chekbox-link:hover {
+  border: 2px solid var(--logo-text);
+  border-radius: 4px;
+  border-color: var(--color-text);
 }
 
-.form-field > .checkbox {
-  padding-left: 12px;
+.chekbox-icon {
+  margin: 0;
+  padding: 0;
+  color: var(--link-text);
 }
 
 .chekbox-link {
@@ -1153,10 +1151,25 @@ textarea[placeholder="Введіть текст"] {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.chekbox-link:focus, .chekbox-link:hover {
-  border: 2px solid var(--logo-text);
-  border-radius: 4px;
-  border-color: var(--color-text);
+
+.checkbox > .checkbox-input {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.container-checkbox {
+  margin-top: 20px;
+}
+
+.container-checkbox {
+  margin-top: 20px;
+}
+
+.form-field > .checkbox {
+  padding-left: 12px;
 }
 
 .form-button {
